@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC client</title>
+  </head>
+  <body>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+    <script src='js/main.js' defer></script>
+    <script src='js/fileHandler.js' defer></script>
+
+    <div>
+        <div id='clients'>
+            <i>Clients: </i>
+        </div> 
+
+        <form onsubmit="return sendFile(event)">
+            <!-- <input type="text" id="text" /> -->
+            <input type="file" id="file" />
+            <input type="submit" value="Send" />
+
+        </form>
+
+        <div id="messages">
+            Messages: 
+        </div>
+
+        <img id="image" />
+    </div>
+    
+  </body>
+</html>
